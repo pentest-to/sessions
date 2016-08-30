@@ -1,3 +1,7 @@
+# Pentest-TO Sessions
+Slides, notes, labs, and other materials for each of Pentest-TO's sessions.
+
+Slides largely original work of @msarfati
 
 ## Presentations
 
