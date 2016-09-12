@@ -34,3 +34,15 @@ If you would like to run presentations locally or make changes you'll have to do
     ```
     http://0.0.0.0:9090
     ```
+
+### Serving it on LAN
+
+1. Make sure your port is allowed incoming connections (ufw, iptables)
+
+2. Run showoff with your IP address you discovered with `ifconfig` or `ip addr`
+	```
+	showoff serve -h 192.168.1.100
+	```
+
+### Special thanks
+
