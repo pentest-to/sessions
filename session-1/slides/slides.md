@@ -179,19 +179,19 @@ Monday September 12th, 2016
 <!SLIDE>
 # Home Labs (Pick one, work in groups of 2 if necessary)
 
-1. Demonstrate a successful man-in-the-middle attack between a machine and its router (`ettercap`), and inspect the traffic with a tool like `Wireshark`. Navigate to various HTTP and HTTPS websites. What kind of information can you see? What is encrypted? What is in plaintext?
+1. (Easy) Demonstrate a successful man-in-the-middle attack between a machine and its router (`ettercap`), and inspect the traffic with a tool like `Wireshark`. Navigate to various HTTP and HTTPS websites. What kind of information can you see? What is encrypted? What is in plaintext?
 
-2. Using MSF modules, exploit a vulnerability in Windows, OS X, Flash or Java that has been updated/patched within the past 6 months and gain remote access. Which CVE(s) does your exploit use? How did it work, and what did the fix do to solve the problem?
+2. (Easy) Using MSF, exploit a well known vulnerability in a vulnerable version of Windows, OS X, Flash or Java, and get remote access to the machine. Which CVE(s) does your exploit use? How did it work, and what did the vendor's fix do to solve the problem?
 
-3. Compromise a well-known webserver like Apache, Nginx, or IIS, or a web application framework like Django, Ruby on Rails, Node.js, etc. (MSF, OWASP-ZAP, curl, whatever)
+3. (Easy) Set up a wireless router using WEP encryption and a short password, and break it with `aircrack-ng`. How do `aircrack-ng`'s attack work, what are IVs, and why is it so successful? Explain WEP's vulnerability.
 
-4. Set up a wireless router using WEP encryption and break it with `aircrack-ng`. How does `aircrack-ng`'s attack work, and why is it so successful? Explain WEP's vulnerability.
+4. (Medium) Compromise an older version of a well-known webserver like Apache, Nginx, or IIS, or a web application framework like Django, Ruby on Rails, Node.js, etc. (MSF, OWASP-ZAP, curl, whatever). Tell us about the vulnerability, the exploit, and what was done to fix it.
 
-5. Establish an SSH session with your own dummy SSH server, and use `Wireshark` or `tcpdump` capture the packets of the session. Decrypt the payload of the packets using the private key. Look into the concept of "Forward Secrecy" and explain why it's important.
+5. (Medium) Spin up a small web server that uses HTTPS/TLS. Create traffic between client and server, capture all the packets using `Wireshark` or `tcpdump` for the duration of the entire session. Try to decrypt the packets using the server-side keys and the keys used in the exchange. Look into the concept of "Forward Secrecy" and tell us why it's important.
 
-6. With only using standard compilers, C/C++ or ASM, and the standard library of your language, write a program that injects shellcode to give you shell access to a Linux, Windows or Mac OS X machine.
+6. (Hard) Develop a plugin for MSF for an exploit that currently does not have an MSF implementation. (You should use CVEs to develop your exploit.) Explain and demonstrate the vulnerability live for us. Tell us about your experience researching the vulnerability and programming the plugin.
 
-7. Develop a plugin for MSF for an exploit that currently does not have an MSF implementation. Explain and demonstrate the vulnerability live for us. Tell us about your experience researching the vulnerability and programming the plugin.
+7. (Hard) Using a system language like C/C++ or ASM, write a program that injects shellcode to give you root access to a Linux, Windows, OS X, iOS or Android machine.
 
 <!SLIDE>
 # Further Reading
